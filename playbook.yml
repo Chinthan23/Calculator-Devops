@@ -1,0 +1,12 @@
+- name: Pull and run docker image
+  hosts: host_machine
+  tasks:
+
+    - name: clean up old containers
+      shell: docker ps -aq --filter name="calculator-devops" | xargs docker stop | xargs docker rm
+
+    - name: pull image
+      shell: docker pull chinx23/calculator-devops:latest
+
+    - name: run container
+      shell: docker run -i -t --name calculator -d chinx23/calculator-devops

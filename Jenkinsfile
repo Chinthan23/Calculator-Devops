@@ -41,13 +41,13 @@ pipeline {
                 sh "docker rmi $registry:latest"
             }
         }
-//         stage('Execute Ansible') {
-//             steps {
-//                 ansiblePlaybook colorized: true,
-//                 installation: 'Ansible',
-//                 inventory: 'inventory',
-//                 playbook: 'playbook.yml'
-//             }
-//         }
+        stage('Execute Ansible') {
+            steps {
+                ansiblePlaybook colorized: true,
+                installation: 'Ansible',
+                inventory: 'inventory',
+                playbook: 'playbook.yml'
+            }
+        }
     }
 }
