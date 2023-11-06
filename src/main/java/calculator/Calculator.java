@@ -23,7 +23,7 @@ public class Calculator {
         Calculator cal = new Calculator();
 
         Scanner sc = new Scanner(System.in);
-        sc.nextLine();
+//        sc.nextLine();
 
         int choice;
 
