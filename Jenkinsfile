@@ -6,7 +6,6 @@ pipeline {
         registryCredential = "dockersignin"
         dockerImage = ""
     }
-
     stages {
         stage('Pull from GitHub') {
             steps {
