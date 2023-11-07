@@ -23,9 +23,10 @@ public class Calculator {
         Calculator cal = new Calculator();
 
         Scanner sc = new Scanner(System.in);
-        int choice=-1;
-
-        while (choice != 0) {
+        int choice;
+        System.out.println("Press Enter to start calculator");
+        sc.nextLine();
+        do {
             Calculator.menu();
 
             choice = sc.nextInt();
@@ -89,6 +90,7 @@ public class Calculator {
             }
             System.out.println();
         }
+        while(choice!=0);
         sc.close();
     }
     public double mySqrt(double num) {
