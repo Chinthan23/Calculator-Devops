@@ -21,7 +21,6 @@ public class Calculator {
 
     public static void main(String [] arg){
         Calculator cal = new Calculator();
-
         Scanner sc = new Scanner(System.in);
         int choice;
         System.out.println("Press Enter to start calculator");
